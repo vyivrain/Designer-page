@@ -1,0 +1,75 @@
+= javascript_pack_tag 'home_index'
+
+#block1
+  .navbar-container
+    ul.design-navbar#top
+      li.margined-nav-el = link_to t('about_us'), '#'
+      li.margined-nav-el = link_to t('projects'), '#'
+      li.margined-nav-el = link_to t('prices'), '#'
+      li.margined-nav-el = link_to t('contacts'), '#'
+      li = link_to t('write_us'), '#'
+  hr.navbar-hr
+  h2.company-name = t('company.name')
+  h2.company-description = t('company.description')
+  #write-us-top
+#block2
+  .container
+    h2.company-advantages = t('advantages.title')
+    .images-advantages-block
+      .image-block
+        = image_tag 'icon-management.png'
+        p = t('advantages.advantage_1')
+      .image-block
+        = image_tag 'icon-idea.png'
+        p = t('advantages.advantage_2')
+      .image-block
+        = image_tag 'icon-time.png'
+        p = t('advantages.advantage_3')
+#block3
+  .container
+    h2.about-company-title = t('about_company.title')
+    .company-container
+      .row
+        .col-md-6.col-sm-12.col-lg-6.about-company-description
+          = t('about_company.text_html')
+        .col-md-6.col-sm-12.col-lg-6
+          = image_tag 'office_picture', class: 'office-picture'
+    h2.about-company-dream = t('about_company.see_dream')
+#block4
+  .container
+    h2.feedback-title = t('feedback')
+    .feedback-container
+      .photo-block
+        .row
+          .col-md-6.col-lg-6.col-sm-12
+            .feedback-placement
+              .photo-placeholder
+              .feedback-text 1
+          .col-md-6.col-lg-6.col-sm-12
+            .feedback-placement
+              .photo-placeholder
+              .feedback-text 2
+        .row.photo-row
+          .col-md-6.col-lg-6.col-sm-12
+            .feedback-placement
+              .photo-placeholder
+              .feedback-text 3
+          .col-md-6.col-lg-6.col-sm-12
+            .feedback-placement
+              .photo-placeholder
+              .feedback-text 4
+    .feedback-leave
+      = link_to t('feedback_leave'), '#'
+#block5
+  .container
+    #write-us-bottom
+#block6
+  .container
+    .footer
+      p = t('rights_reserved', year: DateTime.current.year)
+      p = t('company.name')
+      p  = link_to t('to_top'), '#top'
+      p = t('company.telephone')
+
+
+= render 'layouts/write_us'

@@ -1,0 +1,17 @@
+.row
+  .col-md-6.col-md-offset-3
+    .panel.panel-default
+      .panel-body
+        = form_with model: @project do |f|
+          .form-group
+            = f.label :name
+            = f.text_field :name, class: 'form-control'
+          .form-group
+            = f.label :group_id, 'Group'
+            = f.select :group_id, Group.pluck(:name, :id), {}, { class: 'form-control' }
+          .form-group
+            #image-add
+
+          .form-group.center
+            = f.submit 'Submit', class: 'btn btn-success'
+  .col-md-3

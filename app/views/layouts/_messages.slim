@@ -1,0 +1,10 @@
+- flash.each do |name, msg|
+  - if msg.is_a?(String)
+    div [class="alert #{name.to_s == 'success' || name.to_s == 'notice' ? 'alert-success' : 'alert-danger'} alert-dismissible" role="alert"]
+      == msg
+      a[href="#" class="close" data-dismiss="alert" aria-label="close"] &times;
+  - elsif msg.is_a?(Array)
+    - msg.each do |m|
+      div [class="alert #{name.to_s == 'success' ? 'alert-success' : 'alert-danger'} alert-dismissible" role="alert"]
+        == m
+        a[href="#" class="close" data-dismiss="alert" aria-label="close"] &times;

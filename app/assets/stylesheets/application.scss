@@ -1,0 +1,356 @@
+@import "bootstrap";
+@import "font-awesome";
+
+@font-face {
+  font-family: HelveticaNeueCyrBlack;
+  url: url(font-path('HelveticaNeueCyr-Black.ttf'))
+}
+
+@font-face {
+  font-family: HelveticaNeueCyrBlackItalic;
+  url: url(font-path('HelveticaNeueCyr-BlackItalic.ttf'))
+}
+
+@font-face {
+  font-family: HelveticaNeueCyrBold;
+  url: url(font-path('HelveticaNeueCyr-Bold.ttf'))
+}
+
+@font-face {
+  font-family: HelveticaNeueCyrBoldItalic;
+  url: url(font-path('HelveticaNeueCyr-BoldItalic.ttf'))
+}
+
+@font-face {
+  font-family: HelveticaNeueCyrHeavy;
+  url: url(font-path('HelveticaNeueCyr-Heavy.eot'))
+}
+
+@font-face {
+  font-family: HelveticaNeueCyrHeavyItalic;
+  url: url(font-path('HelveticaNeueCyr-HeavyItalic.ttf'))
+}
+
+@font-face {
+  font-family: HelveticaNeueCyrItalic;
+  url: url(font-path('HelveticaNeueCyr-Italic.ttf'))
+}
+
+@font-face {
+  font-family: HelveticaNeueCyrLight;
+  url: url(font-path('HelveticaNeueCyr-Light.ttf'))
+}
+
+@font-face {
+  font-family: HelveticaNeueCyrLightItalic;
+  url: url(font-path('HelveticaNeueCyr-LightItalic.ttf'))
+}
+
+@font-face {
+  font-family: HelveticaNeueCyrMedium;
+  url: url(font-path('HelveticaNeueCyr-Medium.ttf'))
+}
+
+@font-face {
+  font-family: HelveticaNeueCyrMediumItalic;
+  url: url(font-path('HelveticaNeueCyr-MediumItalic.ttf'))
+}
+
+@font-face {
+  font-family: HelveticaNeueCyrRoman;
+  url: url(font-path('HelveticaNeueCyr-Roman.woff'))
+}
+
+@font-face {
+  font-family: HelveticaNeueCyrThin;
+  url: url(font-path('HelveticaNeueCyr-Thin.ttf'))
+}
+
+@font-face {
+  font-family: HelveticaNeueCyrThinItalic;
+  url: url(font-path('HelveticaNeueCyr-ThinItalic.ttf'))
+}
+
+@font-face {
+  font-family: HelveticaNeueCyrUltraLight;
+  url: url(font-path('HelveticaNeueCyr-UltraLight.ttf'))
+}
+
+@font-face {
+  font-family: HelveticaNeueCyrUltraLightItalic;
+  url: url(font-path('HelveticaNeueCyr-UltraLightItalic.ttf'))
+}
+
+html, body {
+  font-size: 100%;
+}
+
+h2, a {
+  font-family: HelveticaNeueCyrUltraLight;
+}
+
+#block1 {
+  background-image: url(asset_path('background1.jpg'));
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+  background-attachment: fixed;
+  height: 40rem;
+  padding: 0;
+}
+
+#block2 {
+  background-color: rgb(235, 243, 245);
+  height: 21.25rem;
+}
+
+#block3 {
+  background-color: rgb(252, 207, 146);
+  height: 43.125rem;
+}
+
+#block4 {
+  background-image: url(asset_path('background2.jpg'));
+  height: 45rem;
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+  background-attachment: fixed;
+  padding: 0;
+}
+
+#block5 {
+  background-color: rgb(252, 207, 146);
+  height: 12.5rem;
+}
+
+#block6 {
+  background-color: rgb(222, 106, 91);
+  height: 9.375rem;
+}
+
+.navbar-container {
+  width: 55%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.design-navbar {
+  display: inline-block;
+  list-style-type: none;
+  margin: 0;
+  width: 100%;
+
+  li {
+    display: inline-block;
+    margin-right: 0.5rem;
+
+    &:last-child {
+      border-left: solid 1px rgb(252, 207, 146);
+      border-right: solid 1px rgb(252, 207, 146);
+      float: right;
+
+      a {
+        padding: 0.75rem 1rem 0.75rem 1rem;
+      }
+    }
+
+    a {
+      font-family: HelveticaNeueCyrUltraLight;
+      color: white;
+      display: inline-block;
+      padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+      text-decoration: none;
+
+      &:hover {
+        background-color: rgb(34, 58, 94);
+        border-radius: 0.3rem;
+      }
+    }
+  }
+}
+
+.margined-nav-el {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.navbar-hr {
+  border: solid 2px rgb(252, 207, 146);
+  margin-top: 0rem;
+}
+
+.company-name {
+  margin-top: 13rem;
+  text-align: center;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.company-description {
+  margin-top: 3rem;
+  text-align: center;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.company-advantages {
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+  color: rgb(34, 58, 94);
+  position: relative;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.images-advantages-block {
+  text-align: center;
+  display: table-cell;
+  width: inherit;
+  position: relative;
+  left: -2rem;
+  .image-block {
+    display: inline-block;
+    margin-right: 5rem;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.about-company-title {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.about-company-description {
+  margin-top: 1.5rem;
+}
+
+.about-company-dream {
+  position: relative;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 6rem;
+}
+
+.company-container {
+  position: relative;
+  left: 5rem;
+}
+
+.office-picture {
+  width: 25rem;
+  height: 25rem;
+}
+
+.feedback-title {
+  position: relative;
+  text-align: center;
+  font-size: 1.5rem;
+  color: white;
+  margin-top: 3.5rem;
+}
+
+.order-visualization-top-button {
+  font-size: 2rem;
+  color: white;
+  padding: 1rem 2rem 1rem 2rem;
+  border: none;
+  background-color: rgb(222, 106, 91);
+  margin-top: 7rem;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgb(222, 127, 99);
+  }
+}
+
+.order-visualization-bottom-button {
+  font-size: 2rem;
+  color: white;
+  padding: 1rem 2rem 1rem 2rem;
+  border: none;
+  background-color: rgb(222, 106, 91);
+  margin-top: 7rem;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgb(222, 127, 99);
+  }
+}
+
+.photo-block {
+  margin-top: 5rem;
+}
+
+.photo-row {
+  margin-top: 5rem;
+}
+
+.feedback-container {
+  position: relative;
+  left: 10rem;
+}
+
+.feedback-placement {
+  display: flex;
+}
+
+.feedback-placeholder {
+  display: inline-block;
+}
+
+.photo-placeholder {
+  display: inline-block;
+  text-align: center;
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  background-color: #730E15;
+}
+
+.feedback-text {
+  display: inline-block;
+  color: white;
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+
+.feedback-leave {
+  text-align: center;
+  margin-top: 4rem;
+  font-size: 2rem;
+  a {
+    cursor: pointer;
+    color: rgb(222, 106, 91);
+    text-decoration: none;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    background-color: rgb(252, 207, 146);
+    &:hover {
+      background-color: #D7AE91;
+    }
+  }
+}
+
+.footer {
+  width: inherit;
+  text-align: center;
+  margin-top: 4rem;
+  display: inline-block;
+  position: relative;
+  font-size: 0.8rem;
+
+  p {
+    display: inline-block;
+    margin-right: 8rem;
+    a {
+      color: black;
+      display: inline-block;
+      padding: 0.5rem 1rem 0.5rem 1rem;
+      border: 1px solid black;
+      border-radius: 10%;
+    }
+  }
+}

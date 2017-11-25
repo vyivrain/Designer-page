@@ -1,0 +1,17 @@
+en:
+  introduction: "My name is Alisa. I'm 24. I am 3D designer. I have 2 years commercial experience in 3D. I am working in programs: 3ds max + V-ray, 4D Cinema, Photoshop, Autocad."
+  work:
+    modeling: "3d modeling"
+    interiors: "3d visualization interiors"
+    design: "design of interiors, furniture"
+    texturing: "texturing"
+    animations: "animations (learning)"
+  personal_qualities:
+    title: "Peronal qualities:"
+    description: >
+      Analytical mindset, efficiency, perseverance, easy learning, the desire to gain new knowledge, work for results,
+      meeting deadlines, volume-spatial thinking, creativity, sense of style, artistic taste,
+      innovative approach to work, attentive to details.
+  languages:
+    title: "Language"
+    description: "russian, ukrainian, english (pre-intermediate)"
