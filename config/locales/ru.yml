@@ -42,3 +42,8 @@ ru:
   to_top: "Наверх"
   rights_reserved: "%{year} / Все права защищены"
   feedback_leave: "Оставить отзыв"
+  write_us_form:
+    name: "Имя"
+    email: "Электронный адрес"
+    text: "Текст"
+    send: "Отправить"

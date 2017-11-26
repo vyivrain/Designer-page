@@ -13,6 +13,7 @@ gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'webpacker'
 gem 'figaro'
+gem 'i18n-js'
 gem 'friendly_id'
 gem 'jquery-rails'
 

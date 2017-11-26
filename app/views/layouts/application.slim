@@ -8,6 +8,11 @@ html
 
     = stylesheet_link_tag 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css'
     = stylesheet_link_tag 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css'
+
+    = javascript_include_tag 'i18n/translations'
+
+    javascript:
+      I18n.locale = "#{I18n.locale}";
   body
     .container
       = render 'layouts/messages'

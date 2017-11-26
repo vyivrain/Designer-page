@@ -273,7 +273,7 @@ h2, a {
   padding: 1rem 2rem 1rem 2rem;
   border: none;
   background-color: rgb(222, 106, 91);
-  margin-top: 7rem;
+  margin-top: 4rem;
   cursor: pointer;
 
   &:hover {
@@ -351,6 +351,54 @@ h2, a {
       padding: 0.5rem 1rem 0.5rem 1rem;
       border: 1px solid black;
       border-radius: 10%;
+    }
+  }
+}
+
+.write-us-modal {
+  h4 {
+    text-align: center;
+  }
+
+  form {
+    input[type="text"] {
+      width: 100%;
+      line-height: 1.2rem;
+      font-size: 1.2rem;
+      background-color: grey;
+      color: white;
+
+      &::placeholder {
+        color: white;
+      }
+    }
+
+    input[type="text"]:nth-child(2) {
+      margin-top: 1rem;
+    }
+
+    textarea {
+      width: 100%;
+      margin-top: 1rem;
+      line-height: 1.2rem;
+      font-size: 1.2rem;
+      background-color: grey;
+      color: white;
+      resize: none;
+      height: 5rem;
+
+      &::placeholder {
+        color: white;
+      }
+    }
+
+    .submit-decorator {
+      text-align: right;
+      margin-top: 1rem;
+      input[type="submit"] {
+        width: 10rem;
+        line-height: 1.2rem;
+      }
     }
   }
 }

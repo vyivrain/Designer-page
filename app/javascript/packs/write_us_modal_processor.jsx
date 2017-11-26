@@ -13,9 +13,10 @@ export default class WriteUsModalProcessor extends React.Component {
   }
 
   render() {
+    let buttonName = I18n.t('order_visualization');
     return (
       <div className="text-center">
-        <button onClick={this.toggleModal.bind(this)} className={this.props.buttonClass}>Заказать визуализацию</button>
+        <button onClick={this.toggleModal.bind(this)} className={this.props.buttonClass}>{buttonName}</button>
         <WriteUsModal showModal={this.state.isOpen} onClose={this.toggleModal.bind(this)}/>
       </div>
     )
