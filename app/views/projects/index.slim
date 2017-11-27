@@ -1,21 +1,2 @@
-.container
-  .group-data
-    .right
-      = link_to 'New Project', new_project_path, class: 'btn btn-success'
-    table.table.table-hover.group-table.center
-      thead
-        tr
-          th.center #
-          th.center Name
-          th.center Group
-          th.center Actions
-      - @projects.each_with_index do |project, i|
-        tr
-          td = i + 1
-          td = project.name
-          td = project.group.name
-          td
-            => link_to edit_group_path(project), class: 'btn btn-primary' do
-              i.fa.fa-pencil
-            = link_to group_path(project), class: 'btn btn-danger', method: :delete, data: { confirm: 'Are you sure?' } do
-              i.fa.fa-trash
+#projects-block1
+  = render 'layouts/navbar'

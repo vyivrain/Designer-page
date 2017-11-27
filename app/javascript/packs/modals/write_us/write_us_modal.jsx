@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, Modal } from 'react-bootstrap'
+import { Modal } from 'react-bootstrap'
 
 class WriteUsModal extends React.Component {
   constructor(props) {
@@ -12,7 +12,7 @@ class WriteUsModal extends React.Component {
       <div>
         <Modal show={this.props.showModal} onHide={this.props.onClose} dialogClassName="write-us-modal">
           <Modal.Header closeButton>
-            <Modal.Title>{I18n.t('write_us')}</Modal.Title>
+            <Modal.Title>{I18n.t('write_us').toUpperCase()}</Modal.Title>
           </Modal.Header>
           <Modal.Body>
             <form>

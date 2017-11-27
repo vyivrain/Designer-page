@@ -1,18 +1,12 @@
 = javascript_pack_tag 'home_index'
 
-#block1
-  .navbar-container
-    ul.design-navbar#top
-      li.margined-nav-el = link_to t('about_us'), '#'
-      li.margined-nav-el = link_to t('projects'), '#'
-      li.margined-nav-el = link_to t('prices'), '#'
-      li.margined-nav-el = link_to t('contacts'), '#'
-      li = link_to t('write_us'), '#'
+#home-block1
+  = render 'layouts/navbar'
   hr.navbar-hr
   h2.company-name = t('company.name')
   h2.company-description = t('company.description')
   #write-us-top
-#block2
+#home-block2
   .container
     h2.company-advantages = t('advantages.title')
     .images-advantages-block
@@ -25,7 +19,7 @@
       .image-block
         = image_tag 'icon-time.png'
         p = t('advantages.advantage_3')
-#block3
+#home-block3
   .container
     h2.about-company-title = t('about_company.title')
     .company-container
@@ -35,7 +29,7 @@
         .col-md-6.col-sm-12.col-lg-6
           = image_tag 'office_picture', class: 'office-picture'
     h2.about-company-dream = t('about_company.see_dream')
-#block4
+#home-block4
   .container
     h2.feedback-title = t('feedback')
     .feedback-container
@@ -58,12 +52,11 @@
             .feedback-placement
               .photo-placeholder
               .feedback-text 4
-    .feedback-leave
-      = link_to t('feedback_leave'), '#'
-#block5
+    #feedback-leave
+#home-block5
   .container
     #write-us-bottom
-#block6
+#home-block6
   .container
     .footer
       p = t('rights_reserved', year: DateTime.current.year)

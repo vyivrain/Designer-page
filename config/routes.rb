@@ -6,6 +6,8 @@ Rails.application.routes.draw do
   resources :images, except: [:update, :edit]
   resources :groups, path: '/portfolio'
   resources :contacts, only: [:index]
+  resources :prices, only: [:index]
+  resources :about_us, only: [:index]
 
   namespace :api do
     namespace :v1 do
