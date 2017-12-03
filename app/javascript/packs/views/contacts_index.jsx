@@ -8,7 +8,7 @@ const MapComponent = withScriptjs(withGoogleMap(props =>
   </GoogleMap>
 ));
 
-class Contacts extends React.Component {
+class ContactsIndex extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -32,5 +32,5 @@ class Contacts extends React.Component {
 }
 
 document.addEventListener("DOMContentLoaded", e => {
-  ReactDOM.render(<Contacts />, document.getElementById('contacts-map'))
+  ReactDOM.render(<ContactsIndex />, document.getElementById('contacts-map'))
 });

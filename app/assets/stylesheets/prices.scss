@@ -1,0 +1,65 @@
+#prices-block1 {
+  background-image: url(asset_path('background4.jpg'));
+  background-repeat: no-repeat;
+  background-size: 100vw 75vh;
+  background-attachment: fixed;
+  height: 40rem;
+  padding: 0;
+}
+
+.prices-description {
+  width: 40%;
+  margin-top: 6rem;
+  text-align: center;
+  line-height: 1.5rem;
+  font-size: 1.3rem;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+}
+
+.prices-order-visualization-top-button {
+  @extend .order-visualization-top-button;
+  margin-top: 17rem;
+}
+
+#prices-block2 {
+  overflow: auto;
+  background-color: rgb(235, 243, 245);
+}
+
+.price-service {
+  margin-top: 4rem;
+  text-align: center;
+  font-size: 1.4rem;
+  padding-top: 0.5rem 1rem 0.5rem 1rem;
+  color: rgb(34, 58, 94);
+}
+
+.price-container {
+  width: 50%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.price-box {
+  background-color: rgb(188, 200, 209);
+  border: 1px solid rgb(188, 200, 209);
+  border-radius: 0.2rem;
+  .price-content {
+    padding: 1rem 0.5rem 1rem 0.5rem;
+
+    .price-title {
+      
+    }
+
+    .price-description {
+      
+    }
+  }
+}
+
+#prices-block3 {
+  @extend #home-block5;
+}

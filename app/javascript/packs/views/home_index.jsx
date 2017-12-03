@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import WriteUsModalProcessor from './modals/write_us/write_us_modal_processor'
-import FeedbackModalProcessor from './modals/feedback/feedback_modal_processor'
+import WriteUsModalProcessor from '../modals/write_us/write_us_modal_processor'
+import FeedbackModalProcessor from '../modals/feedback/feedback_modal_processor'
 
 document.addEventListener("DOMContentLoaded", e => {
   ReactDOM.render(<WriteUsModalProcessor buttonClass="order-visualization-top-button" />,

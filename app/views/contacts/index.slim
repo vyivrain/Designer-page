@@ -1,2 +1,19 @@
+= javascript_pack_tag 'views/contacts_index'
+
 #contacts-block1
   = render 'layouts/navbar'
+  .contacts-container
+    .row
+      .col-md-6.col-lg-6.col-sm-12
+        h2 Контактная информация
+        p Украина, Киев
+        p Телефон:
+        p +3805935435
+        p Почта:
+        p some_email@gmail.com
+      .col-md-6.col-lg-6.col-sm-12
+        = render 'write_us'
+#contacts-map
+= render 'layouts/footer'
+        
+    

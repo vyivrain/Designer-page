@@ -1,2 +1,12 @@
+= javascript_pack_tag 'views/projects_index'
+
 #projects-block1
   = render 'layouts/navbar'
+  h2.projects-description = t('projects.description_html')
+  #write-us-top
+#projects-block2
+  h2.our-projects = t('projects.our_projects')
+#projects-block3
+  = render 'layouts/write_us_bottom'
+= render 'layouts/footer'
+

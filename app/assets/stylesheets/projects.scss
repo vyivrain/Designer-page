@@ -1,0 +1,35 @@
+#projects-block1 {
+  background-image: url(asset_path('background3.jpg'));
+  background-repeat: no-repeat;
+  background-size: 100vw 75vh;
+  background-attachment: fixed;
+  height: 40rem;
+  padding: 0;
+}
+
+#projects-block2 {
+  overflow: auto;
+  background-color: rgb(235, 243, 245);
+}
+
+.projects-description {
+  width: 40%;
+  margin-top: 6rem;
+  text-align: center;
+  line-height: 1.5rem;
+  font-size: 1.3rem;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+}
+
+.our-projects {
+  margin-top: 3rem;
+  font-size: 1.5rem;
+  color: rgb(34, 58, 94);
+  text-align: center;
+}
+
+#projects-block3 {
+  @extend #home-block5;
+}

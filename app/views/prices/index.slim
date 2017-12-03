@@ -1,2 +1,42 @@
+= javascript_pack_tag 'views/prices_index'
+
 #prices-block1
   = render 'layouts/navbar'
+  h2.prices-description = t('prices.description_html')
+  #write-us-top
+#prices-block2
+  h2.price-service = t('prices.services_price')
+  .price-container
+    .row
+      .col-md-6.col-lg-6.col-sm-12
+        .price-box
+          .price-content
+            .price-title
+              p Пакет "Стандарт"
+            .price-description
+              p Дизайн интерьераж
+              p 3д визуализации каждого помещения;
+            .price-title
+              p Стоимость
+              p от 150 грн/кв.м.
+            .price-description
+              p
+                | (цены на 3d визуализацию варируются от специфики планировки, общей площади и выбранного стиля)
+      .col-md-6.col-lg-6.col-sm-12
+        .price-box
+          .price-content
+            .price-title
+              p Пакет "Стандарт +"
+            .price-description
+              p Дизайн интерьера;
+              p 3д визуализации каждого помещения;
+              p технические чертежи;
+            .price-title
+              p Стоимость
+              p от 250 грн/кв.м.
+            .price-description
+              p
+                | (цены на 3d визуализацию варируются от специфики планировки, общей площади и выбранного стиля)
+#prices-block3
+  = render 'layouts/write_us_bottom'
+= render 'layouts/footer'

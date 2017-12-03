@@ -1,8 +1,7 @@
-= javascript_pack_tag 'home_index'
+= javascript_pack_tag 'views/home_index'
 
 #home-block1
   = render 'layouts/navbar'
-  hr.navbar-hr
   h2.company-name = t('company.name')
   h2.company-description = t('company.description')
   #write-us-top
@@ -54,15 +53,5 @@
               .feedback-text 4
     #feedback-leave
 #home-block5
-  .container
-    #write-us-bottom
-#home-block6
-  .container
-    .footer
-      p = t('rights_reserved', year: DateTime.current.year)
-      p = t('company.name')
-      p  = link_to t('to_top'), '#top'
-      p = t('company.telephone')
-
-
-= render 'layouts/write_us'
+  = render 'layouts/write_us_bottom'
+= render 'layouts/footer'
